@@ -35,7 +35,7 @@ st.write("CABO INFO - Onde você encontra tudo o que precisa saber sobre Cabo Ve
 #Escolha no SideBar. Depois deve ser feita em formato de pagina
 pagina = st.sidebar.selectbox("Escolha o que quer ver:", ['Governo', 'Ilhas', 'Cidades', 'Politica', 'Cultura'])
 
-if pagina == 'Clima':
+if pagina == 'Cidades':
    cidade = st.sidebar.selectbox('Escolha a cidade:', cidades)
    if cidade == 'Ribeira Grande':
        # Fazer um Web Scraping com informações relevantes da cidade
