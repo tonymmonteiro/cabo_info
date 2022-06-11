@@ -33,17 +33,21 @@ st.title("CABO INFO")
 st.write("CABO INFO - Onde você encontra tudo o que precisa saber sobre Cabo Verde")
 
 #Escolha no SideBar. Depois deve ser feita em formato de pagina
-pagina = st.sidebar.selectbox("Escolha o que quer ver:", ['Governo', 'Ilhas', 'Cidades', 'Politica', 'Cultura'])
+pagina = st.sidebar.selectbox("Escolha o que quer ver:", ['Governo', 'Ilhas', 'Cidades', 'Politica', 'Cultura', 'Estatísticas'])
 
 if pagina == 'Cidades':
    cidade = st.sidebar.selectbox('Escolha a cidade:', cidades)
    if cidade == 'Ribeira Grande':
        # Fazer um Web Scraping com informações relevantes da cidade
        st.header("RIBEIRA GRANDE")
-       st.write('O Concelho da Ribeira Grande é um concelho/município da ilha de Santo Antão no grupo de Barlavento, em'
-                'Cabo Verde. A área desse concelho mais a do concelho de Paul estende-se por apenas 1/3 da área da ilha,'
-                'mas têm juntos cerca de 2/3 de sua população.')
-       st.image('C:/PycharmProjects/cvcifras/CMRGPontaSol.png')
+       st.write('O Concelho da Ribeira Grande é um concelho/município da ilha de Santo Antão no grupo de Barlavento, em Cabo Verde. A área desse concelho mais a do concelho de Paul estende-se por apenas 1/3 da área da ilha mas têm juntos cerca de 2/3 de sua população.')
+       #st.image('C:/PycharmProjects/cvcifras/CMRGPontaSol.png')
+       st.write('O Dia do Município é 17 de janeiro, comemorando a data em que a ilha foi supostamente descoberta. '
+                'Coincide com o dia da celebração de Santo Antão, padroeiro da ilha.'
+                'Desde 2008, o município de Ribeira Grande é governado pelo Movimento para a Democracia.')
+       st.subheader('HISTÓRIA')
+       st.write(' O Concelho da Ribeira Grande é uma das divisões administrativas mais antigas de Cabo Verde. Em fins do séc XIX foi fundido com o antigo Concelho do Paul, passando os dois a constituir o Concelho de Santo Antão. Em 1971 o Concelho de Santo Antão redividido em 3 concelhos: Ribeira Grande, Paul e Porto Novo.')
+
        st.sidebar.write(clima.ribeira_grande())
    if cidade == 'Ponta do Sol':
        st.sidebar.write(clima.ponta_do_sol())
