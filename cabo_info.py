@@ -22,8 +22,8 @@ print(desc_rg[0])
 # LISTA COM AS CIDADES
 cidades = ['Ribeira Grande', 'Ponta do Sol', 'Paul', 'Porto Novo', 'Mindelo', 'Santa Luzia', 'Ribeira Brava',
            'Tarrafal de São Nicolau', 'Espargos', 'Santa Maria', 'Sal Rei', 'Maio', 'Praia', 'São Domingos', 'Santa Catarina de Santiago',
-           'São Salvador do Mundo', 'Santa Cruz', 'São Lourenço dos Órgãos', 'Ribeira Grande ST', 'São Miguel', 'Tarrafal',
-           'São Filipe', 'Santa Catarina', 'Mosteiros', 'Brava']
+           'São Salvador do Mundo', 'Santa Cruz', 'São Lourenço dos Órgãos', 'Ribeira Grande de Santiago', 'São Miguel', 'Tarrafal de Santiago',
+           'São Filipe', 'Santa Catarina do Fogo', 'Mosteiros', 'Brava']
 
 #Titulo
 st.sidebar.title("CABO INFO")
@@ -77,3 +77,24 @@ if pagina == 'Cidades':
        st.sidebar.write(clima.sao_domingos())
    if cidade == 'Santa Catarina de Santiago':
        st.sidebar.write(clima.santa_catarina_st())
+   if cidade == 'São Salvador do Mundo':
+       st.sidebar.write(clima.sao_salvador())
+   if cidade == 'Santa Cruz':
+       st.sidebar.write(clima.santa_cruz())
+   if cidade == 'São Lourenço dos Órgãos':
+       st.sidebar.write(clima.sao_lourenço())
+   if cidade == 'Ribeira Grande de Santiago':
+       st.sidebar.write(clima.ribeira_grande_st())
+   if cidade == 'São Miguel':
+       st.sidebar.write(clima.sao_miguel())
+   if cidade == 'Tarrafal de Santiago':
+       st.sidebar.write(clima.tarrafal_st())
+   if cidade == 'São Filipe':
+       st.sidebar.write(clima.sao_filipe())
+   if cidade == 'Santa Catarina do Fogo':
+       st.sidebar.write(clima.santa_catarina_fg())
+   if cidade == 'Mosteiros':
+       st.sidebar.write(clima.mosteiros())
+   if cidade == 'Brava':
+       st.sidebar.write(clima.brava())
+
