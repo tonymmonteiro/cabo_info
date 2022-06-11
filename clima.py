@@ -246,32 +246,92 @@ def santa_catarina_st():
     return SANTA_CATARINA_ST
 
 def sao_salvador():
-    pass
+    link_ssm = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_ssm}&lon={lon_ssm}&appid={API_KEY}&lang=pt&'
+    requisicao_ssm = requests.get(link_ssm)
+    requisicao_dic_ssm = requisicao_ssm.json()
+    descricao_ssm = requisicao_dic_ssm['weather'][0]['description']
+    temperatura_ssm = requisicao_dic_ssm['main']['temp'] - 272.15
+    SAO_SALVADOR_DO_MUNDO = f'Clima em São Salvador do Mundo: {descricao_ssm}, Temperatura em São Salvador do Mundo: {"%.0f" % temperatura_ssm}ºC'
+    return SAO_SALVADOR_DO_MUNDO
 
 def santa_cruz():
-    pass
+    link_scr = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_scr}&lon={lon_scr}&appid={API_KEY}&lang=pt&'
+    requisicao_scr = requests.get(link_scr)
+    requisicao_dic_scr = requisicao_scr.json()
+    descricao_scr = requisicao_dic_scr['weather'][0]['description']
+    temperatura_scr = requisicao_dic_scr['main']['temp'] - 272.15
+    SANTA_CRUZ = f'Clima em Santa Cruz: {descricao_scr}, Temperatura em Santa Cruz: {"%.0f" % temperatura_scr}ºC'
+    return SANTA_CRUZ
 
 def sao_lourenço():
-    pass
+    link_slo = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_slo}&lon={lon_slo}&appid={API_KEY}&lang=pt&'
+    requisicao_slo = requests.get(link_slo)
+    requisicao_dic_slo = requisicao_slo.json()
+    descricao_slo = requisicao_dic_slo['weather'][0]['description']
+    temperatura_slo = requisicao_dic_slo['main']['temp'] - 272.15
+    SAO_LOURENCO = f'Clima em São Lourenço: {descricao_slo}, Temperatura em São Lourenço: {"%.0f" % temperatura_slo}ºC'
+    return SAO_LOURENCO
 
 def ribeira_grande_st():
-    pass
+    link_rgst = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_rgst}&lon={lon_rgst}&appid={API_KEY}&lang=pt&'
+    requisicao_rgst = requests.get(link_rgst)
+    requisicao_dic_rgst = requisicao_rgst.json()
+    descricao_rgst = requisicao_dic_rgst['weather'][0]['description']
+    temperatura_rgst = requisicao_dic_rgst['main']['temp'] - 272.15
+    RIBEIRA_GRANDE_ST = f'Clima em Ribeira Grande de Santiago: {descricao_rgst}, Temperatura em Ribeira Grande de Santiago: {"%.0f" % temperatura_rgst}ºC'
+    return RIBEIRA_GRANDE_ST
 
 def sao_miguel():
-    pass
+    link_smi = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_smi}&lon={lon_smi}&appid={API_KEY}&lang=pt&'
+    requisicao_smi = requests.get(link_smi)
+    requisicao_dic_smi = requisicao_smi.json()
+    descricao_smi = requisicao_dic_smi['weather'][0]['description']
+    temperatura_smi = requisicao_dic_smi['main']['temp'] - 272.15
+    SAO_MIGUEL = f'Clima em São Miguel: {descricao_smi}, Temperatura em São Miguel: {"%.0f" % temperatura_smi}ºC'
+    return SAO_MIGUEL
 
 def tarrafal_st():
-    pass
+    link_tst = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_tst}&lon={lon_tst}&appid={API_KEY}&lang=pt&'
+    requisicao_tst = requests.get(link_tst)
+    requisicao_dic_tst = requisicao_tst.json()
+    descricao_tst = requisicao_dic_tst['weather'][0]['description']
+    temperatura_tst = requisicao_dic_tst['main']['temp'] - 272.15
+    TARRAFAL_ST = f'Clima em Tarrafal de Santiago: {descricao_tst}, Temperatura em Tarrafal de Santiago: {"%.0f" % temperatura_tst}ºC'
+    return TARRAFAL_ST
 
 def sao_filipe():
-    pass
+    link_sf = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_sf}&lon={lon_sf}&appid={API_KEY}&lang=pt&'
+    requisicao_sf = requests.get(link_sf)
+    requisicao_dic_sf = requisicao_sf.json()
+    descricao_sf = requisicao_dic_sf['weather'][0]['description']
+    temperatura_sf = requisicao_dic_sf['main']['temp'] - 272.15
+    SAO_FILIPE = f'Clima em São Filipe: {descricao_sf}, Temperatura em São Filipe: {"%.0f" % temperatura_sf}ºC'
+    return SAO_FILIPE
 
 def santa_catarina_fg():
-    pass
+    link_scfg = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_scfg}&lon={lon_scfg}&appid={API_KEY}&lang=pt&'
+    requisicao_scfg = requests.get(link_scfg)
+    requisicao_dic_scfg = requisicao_scfg.json()
+    descricao_scfg = requisicao_dic_scfg['weather'][0]['description']
+    temperatura_scfg = requisicao_dic_scfg['main']['temp'] - 272.15
+    SANTA_CATARINA_FG = f'Clima em Santa Catarina do Fogo: {descricao_scfg}, Temperatura em Santa Catarina do Fogo: {"%.0f" % temperatura_scfg}ºC'
+    return SANTA_CATARINA_FG
 
 def mosteiros():
-    pass
+    link_mo = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_mo}&lon={lon_mo}&appid={API_KEY}&lang=pt&'
+    requisicao_mo = requests.get(link_mo)
+    requisicao_dic_mo = requisicao_mo.json()
+    descricao_mo = requisicao_dic_mo['weather'][0]['description']
+    temperatura_mo = requisicao_dic_mo['main']['temp'] - 272.15
+    MOSTEIROS = f'Clima em Mosteiros: {descricao_mo}, Temperatura em Mosteiros: {"%.0f" % temperatura_mo}ºC'
+    return MOSTEIROS
 
 def brava():
-    pass
+    link_br = f'https://api.openweathermap.org/data/2.5/weather?lat={lat_br}&lon={lon_br}&appid={API_KEY}&lang=pt&'
+    requisicao_br = requests.get(link_br)
+    requisicao_dic_br = requisicao_br.json()
+    descricao_br = requisicao_dic_br['weather'][0]['description']
+    temperatura_br = requisicao_dic_br['main']['temp'] - 272.15
+    BRAVA = f'Clima em Brava: {descricao_br}, Temperatura em Brava: {"%.0f" % temperatura_br}ºC'
+    return BRAVA
 
